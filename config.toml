@@ -1,0 +1,87 @@
+theme = "rose_pine_moon"
+
+[editor]
+line-number = "relative"
+color-modes = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.indent-guides]
+render = true
+character = "┆"
+
+[editor.file-picker]
+hidden = false
+
+
+[keys.normal]
+# remap backspace to i
+backspace = "insert_mode"
+
+# remap hjkl
+n = "move_char_left"
+o = "move_char_right"
+e = "move_visual_line_down"
+i = "move_visual_line_up"
+
+# remaps w to r
+"?" = "replace"
+"(" = "replace_with_yanked"
+
+# remamps r to o
+r = "change_selection"
+
+# remamps r to w
+s = "move_prev_word_start"
+S = "move_prev_long_word_start"
+
+# remamps s to b
+
+# remaps t to l
+l = "find_till_char"
+L = "till_prev_char"
+# remaps e to h
+t = "move_next_word_end"
+T = "move_next_long_word_end"
+
+"^" = "search_next"
+"@" = "search_prev"
+
+h = "open_below"
+H = "open_above"
+
+# "ret" = ["open_below", "normal_mode"]
+
+# jump to word using hop-like mechanism
+"=" = "jump_to_identifier_label"
+
+# jump to char using hop-like mechanism
+minus = "jump_to_str_label"
+
+# remaps s
+"|" = "select_regex"
+
+[keys.select]
+n = "extend_char_left"
+o = "extend_char_right"
+e = "extend_visual_line_down"
+i = "extend_visual_line_up"
+
+s = "extend_prev_word_start"
+S = "extend_prev_long_word_start"
+
+t = "extend_next_word_end"
+T = "extend_next_long_word_end"
+
+r = "change_selection"
+
+"A-r" = "flip_selections"
+# extend to word using hop-like mechanism
+"=" = "jump_to_identifier_label_and_extend_selection"
+# extend to character using hop-like mechanism
+minus = "jump_to_str_label_and_extend_selection"
+
+[keys.insert]
+"esc" = "normal_mode"
+
